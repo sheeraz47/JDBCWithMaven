@@ -14,7 +14,7 @@ public class SimpleConnection {
         URL formula: jdbc:oracle:thin:@yourHostName:1521:xe
 
          */
-        String url = "jdbc:oracle:thin:@54.166.75.182:1521:xe";
+        String url = "jdbc:oracle:thin:@34.227.143.104:1521:xe";
         String username ="hr";
         String password = "hr";
 

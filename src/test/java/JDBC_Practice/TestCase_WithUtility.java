@@ -31,7 +31,7 @@ public class TestCase_WithUtility {
         ResultSet result = DBUtility.getResult("select * from employees");
 
 
-        List<Integer> salaries = new ArrayList<>();
+        List<Integer> salaries = new ArrayList<Integer>();
       for(int i =0; result.next();)
           salaries.add(result.getInt("salary"));
 
@@ -60,7 +60,7 @@ public class TestCase_WithUtility {
 
         ResultSetMetaData rsm = result.getMetaData();
 
-        System.out.println("CTotal Number of Columns: "+rsm.getColumnCount());
+        System.out.println("Count Total Number of Columns: "+rsm.getColumnCount());
         System.out.println("Third colum Name: "+rsm.getColumnName(3));
 
         String[] ColumNames =new String[rsm.getColumnCount()];
